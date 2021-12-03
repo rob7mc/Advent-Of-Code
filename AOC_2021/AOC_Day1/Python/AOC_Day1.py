@@ -1,5 +1,5 @@
 # Read in input text file
-file = open("AOC_Day1_Input.txt","r")
+file = open("AOC_2021/AOC_Day1/Python/AOC_Day1_Input.txt","r")
 # Create an array and populate it with the numbers from the text file
 input = []
 for num in file.readlines():

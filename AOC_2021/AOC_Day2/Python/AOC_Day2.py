@@ -1,5 +1,5 @@
 # Read in input text file
-file = open("AOC_Day2_Input.txt","r")
+file = open("AOC_2021/AOC_Day2/Python/AOC_Day2_Input.txt","r")
 # Create an array and populate it with the commands and numbers as a pair 
 # from each line from the text file
 input = []
