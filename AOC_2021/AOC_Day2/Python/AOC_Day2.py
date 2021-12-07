@@ -14,7 +14,7 @@ file.close()
 # command is up and incrementing the depth count by the current number when the
 # current command is down
 
-""" horizontal = 0
+horizontal = 0
 depth = 0
 
 for i in range(0, len(input)):
@@ -23,7 +23,9 @@ for i in range(0, len(input)):
     elif input[i][0] == "up":
         depth -= int(input[i][1])
     else:
-        depth += int(input[i][1]) """
+        depth += int(input[i][1])
+
+print("Part 1: ", horizontal * depth)
 
 # Part 2 - Answer: 1857958050
 # Create a horizontal count, a depth count and an aim count, iterate through the array 
@@ -33,18 +35,17 @@ for i in range(0, len(input)):
 # command is up and incrementing the aim count by the current number when the
 # current command is down
 
-horizontal = 0
-depth = 0
+horizontal2 = 0
+depth2 = 0
 aim = 0
 
 for i in range(0, len(input)):
     if input[i][0] == "forward":
-        horizontal += int(input[i][1])
-        depth += (int(input[i][1]) * aim)
+        horizontal2 += int(input[i][1])
+        depth2 += (int(input[i][1]) * aim)
     elif input[i][0] == "up":
         aim -= int(input[i][1])
     else:
         aim += int(input[i][1])
 
-# Print the answer
-print(horizontal * depth)
+print("Part 2: ", horizontal2 * depth2)
